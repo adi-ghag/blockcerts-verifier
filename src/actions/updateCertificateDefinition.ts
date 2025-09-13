@@ -5,7 +5,7 @@ import setErrorMessage from './setErrorMessage';
 import verifyCertificate from './verifyCertificate';
 import { getDidResolverUrl, getDisableAutoVerify, getExplorerAPIs, getLocale } from '../selectors/api';
 import showVerificationModal from './showVerificationModal';
-import type { Blockcerts, CertificateOptions, Certificate } from '@blockcerts/cert-verifier-js';
+import type { Blockcerts, CertificateOptions, Certificate } from '@adityaghag/cert-verifier-js';
 import type { Dispatch } from 'redux';
 import type { BlockcertsVerifierState } from '../store/getInitialState';
 import type { ThunkAction } from 'redux-thunk';

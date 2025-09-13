@@ -1,12 +1,12 @@
 import { describe, expect, it, afterEach, vi, beforeAll, afterAll } from 'vitest';
 import domain from '../../../../../src/domain';
 import certificateFixture from '../../../../fixtures/v2/valid-certificate-example.json';
-import { Certificate } from '@blockcerts/cert-verifier-js';
-import type { CertificateOptions } from '@blockcerts/cert-verifier-js';
+import { Certificate } from '@adityaghag/cert-verifier-js';
+import type { CertificateOptions } from '@adityaghag/cert-verifier-js';
 
 describe('domain certificates parse method test suite', function () {
   beforeAll(function () {
-    vi.mock('@blockcerts/cert-verifier-js', { spy: true });
+    vi.mock('@adityaghag/cert-verifier-js', { spy: true });
   });
 
   afterEach(function () {

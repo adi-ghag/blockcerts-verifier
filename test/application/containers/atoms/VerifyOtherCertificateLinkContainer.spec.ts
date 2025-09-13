@@ -11,7 +11,7 @@ import { getCertificateDefinition, getFinalStep, getVerifiedSteps } from '../../
 import { getVerificationStatus } from '../../../../src/selectors/verification';
 import stepVerified from '../../../../src/actions/stepVerified';
 import stubCertificateVerify from '../../__helpers/stubCertificateVerify';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('VerifyOtherCertificateLinkContainer test suite', function () {
   let store;

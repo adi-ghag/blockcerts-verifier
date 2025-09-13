@@ -2,7 +2,7 @@ import { describe, expect, it, beforeEach, afterEach } from 'vitest';
 import { configureStore } from '../../../src/store';
 import { getShowVerificationModal, getVerificationStatus } from '../../../src/selectors/verification';
 import startVerificationProcess from '../../../src/actions/startVerificationProcess';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('startVerificationProcess test suite', function () {
   let store;

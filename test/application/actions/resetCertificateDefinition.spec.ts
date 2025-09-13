@@ -9,7 +9,7 @@ import { getVerificationStatus } from '../../../src/selectors/verification';
 import updateVerificationStatus from '../../../src/actions/updateVerificationStatus';
 import stepVerified from '../../../src/actions/stepVerified';
 import stubCertificateVerify from '../__helpers/stubCertificateVerify';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('resetCertificateDefinition action creator test suite', function () {
   stubCertificateVerify(validCertificateFixture);

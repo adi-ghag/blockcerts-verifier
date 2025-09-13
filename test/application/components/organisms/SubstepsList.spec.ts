@@ -1,7 +1,7 @@
 import { describe, expect, it, beforeEach, afterEach } from 'vitest';
 import SubstepsList from '../../../../src/components/organisms/SubstepsList/SubstepsList';
-import type { VerificationSubstep } from '@blockcerts/cert-verifier-js';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import type { VerificationSubstep } from '@adityaghag/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 // needed to register the element in the HTML constructors list in jsdom
 window.customElements.define('substeps-list', SubstepsList);

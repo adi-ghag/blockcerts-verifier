@@ -9,7 +9,7 @@ import updateCertificateDefinition from '../../../../src/actions/updateCertifica
 import validCertificateDefinition from '../../../fixtures/v2/valid-certificate-example.json';
 import { getShowVerificationModal, getVerificationStatus } from '../../../../src/selectors/verification';
 import stubCertificateVerify from '../../__helpers/stubCertificateVerify';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('VerifyButtonContainer test suite', function () {
   stubCertificateVerify(validCertificateDefinition);

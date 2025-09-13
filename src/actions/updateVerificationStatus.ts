@@ -1,5 +1,5 @@
 import * as ACTIONS from '../constants/actionTypes';
-import type { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import type { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 import type { Action } from './action';
 
 export interface UpdateVerificationStatusActionPayload {

@@ -1,4 +1,4 @@
-import type { VerificationSubstep } from '@blockcerts/cert-verifier-js';
+import type { VerificationSubstep } from '@adityaghag/cert-verifier-js';
 
 class StepQueue {
   private readonly queue: VerificationSubstep[];

@@ -3,7 +3,7 @@ import CSS from './_components.substeps-list-css';
 import VerificationStep from '../../molecules/VerificationStep';
 import getText from '../../../i18n/getText';
 import type { TemplateResult } from 'lit-html';
-import type { IVerificationMapItemSuite } from '@blockcerts/cert-verifier-js';
+import type { IVerificationMapItemSuite } from '@adityaghag/cert-verifier-js';
 
 class SubstepsList extends LitElement {
   isOpen: boolean;

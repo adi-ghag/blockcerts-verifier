@@ -8,7 +8,7 @@ import { getCertificateDefinition } from '../selectors/certificate';
 import { getDisableVerify } from '../selectors/api';
 import updateFinalStep from './updateFinalStep';
 import { VERIFICATION_STATUSES } from '../constants/verificationStatuses';
-import type { IFinalVerificationStatus } from '@blockcerts/cert-verifier-js';
+import type { IFinalVerificationStatus } from '@adityaghag/cert-verifier-js';
 import type { Dispatch } from 'redux';
 import type { BlockcertsVerifierState } from '../store/getInitialState';
 import type { ThunkAction } from 'redux-thunk';
