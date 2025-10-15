@@ -30,6 +30,7 @@ export default [
         host: '0.0.0.0',
         port: 8081,
         open: true,
+        openPage: '/demo/explorer-api.html',
         https: {
           cert: fs.readFileSync(`${BUILD_OUTPUT_FOLDER}/https-cert/cert.pem`),
           key: fs.readFileSync(`${BUILD_OUTPUT_FOLDER}/https-cert/key.pem`)
