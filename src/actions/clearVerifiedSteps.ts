@@ -3,7 +3,7 @@ import { getCertificateDefinition } from '../selectors/certificate';
 import domain from '../domain';
 import type { Dispatch } from 'redux';
 import type { BlockcertsVerifierState } from '../store/getInitialState';
-import type { IVerificationMapItem } from '@blockcerts/cert-verifier-js';
+import type { IVerificationMapItem } from '@adityaghag/cert-verifier-js';
 import type { ThunkAction } from 'redux-thunk';
 import type { Action } from './action';
 

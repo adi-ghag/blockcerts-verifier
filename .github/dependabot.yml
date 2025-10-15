@@ -24,6 +24,6 @@ updates:
   - dependency-name: "@commitlint/config-conventional"
     versions:
     - 12.0.0
-  - dependency-name: "@blockcerts/cert-verifier-js"
+  - dependency-name: "@adityaghag/cert-verifier-js"
     versions:
     - 4.6.0

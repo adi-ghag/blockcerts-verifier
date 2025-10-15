@@ -3,7 +3,7 @@ import { getParentStep } from '../selectors/certificate';
 import { VERIFICATION_STATUSES } from '../constants/verificationStatuses';
 import type { ThunkAction } from 'redux-thunk';
 import type { Action } from './action';
-import type { IVerificationMapItem } from '@blockcerts/cert-verifier-js';
+import type { IVerificationMapItem } from '@adityaghag/cert-verifier-js';
 
 function stepVerificationIsSuccessful (step): boolean {
   return step.status === VERIFICATION_STATUSES.SUCCESS;

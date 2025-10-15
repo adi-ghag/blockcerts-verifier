@@ -18,35 +18,34 @@
             }
           };
 
-          // the code below is directly copied from cert-verifier-js and will not work in this example
-          const explorerAPI = {
-            serviceURL: 'https://insight.bitpay.com/api/tx/{transaction_id}',
-            priority: 0,
-            parsingFunction: function (jsonResponse) {
-              if (jsonResponse.confirmations < CONFIG.MininumConfirmations) {
-                throw new VerifierError(SUB_STEPS.fetchRemoteHash, getText('errors', 'parseBitpayResponse'));
-              }
-              const time = timestampToDateObject(jsonResponse.blocktime);
-              const outputs = jsonResponse.vout;
-              const lastOutput = outputs[outputs.length - 1];
-              const issuingAddress = jsonResponse.vout[0].scriptPubKey.addresses[0];
-              const remoteHash = stripHashPrefix(lastOutput.scriptPubKey.hex, BLOCKCHAINS.bitcoin.prefixes);
-              const revokedAddresses = outputs
-                .filter(output => !!output.spentTxId)
-                .map(output => output.scriptPubKey.addresses[0]);
-
-              return {
-                remoteHash,
-                issuingAddress,
-                time,
-                revokedAddresses
-              };
-            }
-          };
 
           document.addEventListener('DOMContentLoaded', function () {
             const verifierElement = document.querySelectorAll('blockcerts-verifier')[0];
-            verifierElement.explorerAPIs = [explorerAPI];
+
+            // Configure custom explorer APIs to skip BlockCypher
+            // Only use Blockstream for Bitcoin transactions
+            const customExplorers = [
+              {
+                serviceName: 'blockstream',
+                serviceURL: {
+                  main: 'https://blockstream.info/api/tx/{transaction_id}',
+                  test: 'https://blockstream.info/testnet/api/tx/{transaction_id}'
+                },
+                priority: 0, // Run first
+                parsingFunction: function(jsonResponse) {
+                  // Parse Blockstream API response
+                  return {
+                    remoteHash: jsonResponse.txid,
+                    issuingAddress: jsonResponse.vout && jsonResponse.vout[0] ? jsonResponse.vout[0].scriptpubkey_address : '',
+                    time: new Date(jsonResponse.status.block_time * 1000).toISOString(),
+                    revokedAddresses: []
+                  };
+                }
+              }
+            ];
+
+            // Set the custom explorers on the component
+            verifierElement.explorerAPIs = customExplorers;
           });
         </script>
         <style>

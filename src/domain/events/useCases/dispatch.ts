@@ -1,4 +1,4 @@
-import type { Blockcerts } from '@blockcerts/cert-verifier-js';
+import type { Blockcerts } from '@adityaghag/cert-verifier-js';
 
  
 export default function dispatch (eventType = '', certificateDefinition: Blockcerts = null, details: any): void {

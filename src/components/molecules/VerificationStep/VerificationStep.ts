@@ -1,7 +1,7 @@
 import { html } from '@polymer/lit-element';
 import CSS from './_components.verification-step-css';
 import ErrorMessage from '../../atoms/ErrorMessage';
-import type { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import type { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 import type { TemplateResult } from 'lit-html';
 
 export interface IVerificationStepAPI {

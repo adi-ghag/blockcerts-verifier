@@ -18,7 +18,7 @@ import { configureStore } from '../../../src/store';
 import getInitialState from '../../../src/store/getInitialState';
 import updateCertificateDefinition from '../../../src/actions/updateCertificateDefinition';
 import stubCertificateVerify from '../__helpers/stubCertificateVerify';
-import type { Signers } from '@blockcerts/cert-verifier-js';
+import type { Signers } from '@adityaghag/cert-verifier-js';
 import { CONTENT_MEDIA_TYPES } from '../../../src/constants/contentTypes';
 import { FakeXmlHttpRequest } from '../__helpers/FakeXmlHttpRequest';
 import { BLOCKCHAINS } from '@blockcerts/explorer-lookup';

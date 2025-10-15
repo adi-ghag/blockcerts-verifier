@@ -1,4 +1,4 @@
-import type { Certificate, BlockcertsV3Display, CONTENT_MEDIA_TYPES } from '@blockcerts/cert-verifier-js';
+import type { Certificate, BlockcertsV3Display, CONTENT_MEDIA_TYPES } from '@adityaghag/cert-verifier-js';
 
 export function getDisplay (certificateDefinition: Certificate): BlockcertsV3Display {
   return certificateDefinition.display;

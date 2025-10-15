@@ -9,7 +9,7 @@ import initialValidCertificateStepsAssertions from '../../assertions/initialVali
 import { getVerificationStatus } from '../../../src/selectors/verification';
 import * as CERTIFICATE_EVENTS from '../../../src/constants/certificateEvents';
 import stubCertificateVerify from '../__helpers/stubCertificateVerify';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 import { FakeXmlHttpRequest } from '../__helpers/FakeXmlHttpRequest';
 
 describe('verifyCertificate action creator test suite', function () {

@@ -4,7 +4,7 @@ import { configureStore } from '../../../../src/store';
 import updateCertificateDefinition from '../../../../src/actions/updateCertificateDefinition';
 import certificateFixture from '../../../fixtures/v2/valid-certificate-example.json';
 import stubCertificateVerify from '../../__helpers/stubCertificateVerify';
-import type { Signers } from '@blockcerts/cert-verifier-js';
+import type { Signers } from '@adityaghag/cert-verifier-js';
 
 describe('CertificateDetailsContainer test suite', function () {
   describe('mapStateToProps method', function () {

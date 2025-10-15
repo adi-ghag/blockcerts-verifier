@@ -3,7 +3,7 @@ import { configureStore } from '../../../src/store';
 import resetVerificationStatus from '../../../src/actions/resetVerificationStatus';
 import { getVerificationStatus } from '../../../src/selectors/verification';
 import { getFinalStep } from '../../../src/selectors/certificate';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('resetVerificationStatus action creator test suite', function () {
   let store;

@@ -13,7 +13,7 @@ import { getVerificationStatus } from '../../../../src/selectors/verification';
 import stepVerified from '../../../../src/actions/stepVerified';
 import stubCertificateVerify from '../../__helpers/stubCertificateVerify';
 import initialize from '../../../../src/actions/initialize';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('FullScreenCertificateContainer test suite', function () {
   let store;

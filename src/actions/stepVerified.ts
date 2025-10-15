@@ -3,7 +3,7 @@ import updateParentStepStatus from './updateParentStepStatus';
 import stepQueueFactory from '../helpers/stepQueue';
 import type { ThunkAction } from 'redux-thunk';
 import type { Action } from './action';
-import type { VerificationSubstep } from '@blockcerts/cert-verifier-js';
+import type { VerificationSubstep } from '@adityaghag/cert-verifier-js';
 
 const stepQueue = stepQueueFactory();
 

@@ -4,7 +4,7 @@ import type {
   Blockcerts,
   BlockcertsVersion,
   CertificateOptions
-} from '@blockcerts/cert-verifier-js';
+} from '@adityaghag/cert-verifier-js';
 
 export interface ICertificateObject {
   certificateDefinition: Certificate | null;
@@ -18,7 +18,7 @@ export default async function parse (definition: Blockcerts, options: Certificat
   }
 
   try {
-    const { retrieveBlockcertsVersion, Certificate } = await import('@blockcerts/cert-verifier-js');
+    const { retrieveBlockcertsVersion, Certificate } = await import('@adityaghag/cert-verifier-js');
     const blockcertsVersion: BlockcertsVersion = retrieveBlockcertsVersion(definition['@context']);
     let certificateDefinition;
     if (blockcertsVersion.versionNumber === 1) {

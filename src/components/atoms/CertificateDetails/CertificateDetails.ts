@@ -28,6 +28,7 @@ export interface ICertificateDetailsApi {
   chain?: string[];
   display?: TPossibleDisplays;
   hideRecipientName?: boolean;
+  crid?: string;
 }
 
 function isDisplayGrid (display: TPossibleDisplays): boolean {
@@ -80,7 +81,8 @@ export default function CertificateDetails ({
   display,
   hideRecipientName,
   signatureSuiteType = [],
-  chain = []
+  chain = [],
+  crid
 }: ICertificateDetailsApi): TemplateResult {
   const details = [];
   if (!hideRecipientName) {
@@ -100,6 +102,13 @@ export default function CertificateDetails ({
       value: issuerName ?? getText('errors.noIssuerName')
     }
   );
+
+  if (crid) {
+    details.push({
+      title: getText('text.crid'),
+      value: crid
+    });
+  }
 
   for (let i = 0; i < issuerPublicKey.length; i++) {
     let prefix = '';

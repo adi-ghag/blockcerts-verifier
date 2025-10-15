@@ -2,7 +2,7 @@ export default {
   errors: {
     errorLabel: 'Error',
     additionalErrorInfoLabel: 'The following error occurred:',
-    invalidBlockcerts: 'Not a valid Blockcerts credential. Please check with the issuer or recipient that has provided this credential.',
+    invalidBlockcerts: 'Not a valid bloxberg credential. Please check with the issuer or recipient that has provided this credential.',
     invalidBlockcertsUrl: 'Not a valid credential URL.',
     invalidFormatDragAndDrop: 'Only JSON files are accepted',
     invalidUrl: 'This does not seem to be a valid URL.',
@@ -12,8 +12,8 @@ export default {
     noTransactionId: 'No transaction ID'
   },
   text: {
-    brandName: 'Blockcerts',
-    blockcertsHint: 'Visit Blockcerts website',
+    brandName: 'bloxberg',
+    blockcertsHint: 'Visit bloxberg website',
     by: 'by',
     certified: 'Certified by',
     closeButton: 'Click to close',
@@ -24,6 +24,7 @@ export default {
     fileUpload: 'Choose JSON file',
     issued: 'Issued on',
     issueDate: 'Issue Date',
+    bloxbergCertified: 'Certified by the bloxberg Association',
     issuerName: 'Issuer',
     issuerPublicKey: 'Issuer\'s public key',
     issuerProfileDomain: 'Issuer\'s information',
@@ -31,7 +32,7 @@ export default {
     itemPlural: 'Items',
     metadataButton: 'View Metadata',
     metadataTitle: 'Metadata',
-    motto: 'Blockcerts, The Open Standard for Blockchain Credentials',
+    motto: 'bloxberg, The Open Standard for Blockchain Credentials',
     recipient: 'Recipient',
     share: 'Share on',
     shareButton: 'Share on Social Networks',
@@ -43,13 +44,15 @@ export default {
     substepsListClose: 'Hide',
     substepsListHint: 'Toggle open list of substeps',
     transactionId: 'Transaction ID',
+    crid: 'CRID',
     urlInput: 'Enter the certificate URL',
     urlInputPlaceholder: 'Certificate URL',
     verificationStepProgress: 'Verifying step...',
     verify: 'Verify',
     verifyAgain: 'Verify again',
     verifyOther: 'Verify another record',
-    viewRecord: 'View Record'
+    viewRecord: 'View Record',
+    successfulBloxberg: 'This certificate has been verified  on the bloxberg blockchain.'
   },
   date: {
     months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],

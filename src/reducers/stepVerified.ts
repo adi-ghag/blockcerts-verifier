@@ -1,6 +1,6 @@
 import { getParentStep } from '../selectors/certificate';
 import type { BlockcertsVerifierState } from '../store/getInitialState';
-import type { IVerificationMapItem, VerificationSubstep } from '@blockcerts/cert-verifier-js';
+import type { IVerificationMapItem, VerificationSubstep } from '@adityaghag/cert-verifier-js';
 import type { Action } from '../actions/action';
 
 function updateSubstepIn (parent: IVerificationMapItem, substep: VerificationSubstep): void {

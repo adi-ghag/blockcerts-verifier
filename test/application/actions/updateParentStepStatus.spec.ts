@@ -6,7 +6,7 @@ import { getParentStep, getVerifiedSteps } from '../../../src/selectors/certific
 import updateCertificateDefinition from '../../../src/actions/updateCertificateDefinition';
 import certificateFixture from '../../fixtures/v2/valid-certificate-example.json';
 import stubCertificateVerify from '../__helpers/stubCertificateVerify';
-import { VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { VERIFICATION_STATUSES } from '@adityaghag/cert-verifier-js';
 
 describe('updateParentStepStatus action creator test suite', function () {
   let store;
